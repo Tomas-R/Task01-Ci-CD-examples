@@ -1,0 +1,12 @@
+- name: Copy folder content recursively to remote
+     uses: garygrossgarten/github-action-scp@release
+     with:
+       local: my-repo
+       remote: ~/target/directory
+       host: 123.132.123.132
+       port: 59666
+       username: tomas
+       privateKey: ${{secrets.PRIVATE_KEY}}
+       
+       
+       # https://github.com/marketplace/actions/copy-via-ssh
